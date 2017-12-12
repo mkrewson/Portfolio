@@ -1,0 +1,29 @@
+html, body{
+   overflow-x: hidden;
+   background-color:#F7F7F7;
+ }
+ body {
+   font-family: "europa", sans-serif;
+   color:#4B4B4B;
+ }
+ h1, h2, h3, h4, h5, h6 {
+   font-family: "europa", sans-serif;
+   font-style:normal;
+ }
+ h1 {
+   font-size:32px;
+   font-style:normal;
+   font-weight:700;
+ }
+ .intro{
+   color:#6F6F6F;
+ }
+ h2 {
+   font-size:25px;
+   font-weight:700;
+ }
+ p {
+   font-size:25px;
+   font-weight:400;
+   color:#6F6F6F;     
+ }
