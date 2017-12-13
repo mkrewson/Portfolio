@@ -11,7 +11,7 @@ html, body{
    font-style:normal;
  }
  h1 {
-   font-size:32px;
+   font-size:42px;
    font-style:normal;
    font-weight:700;
  }
@@ -19,15 +19,15 @@ html, body{
    color:#6F6F6F;
  }
  h2 {
-   font-size:25px;
+   font-size:33.3px;
    font-weight:700;
  }
  p {
-   font-size:25px;
+   font-size:33.3px;
    font-weight:400;
    color:#6F6F6F;     
  }
- .navbuttons{
-   font-size:25px;
+ .nav-buttons{
+   font-size:26px;
    font-weight:700;
  }
