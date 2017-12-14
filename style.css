@@ -1,47 +1,142 @@
  html, body{
    overflow-x: hidden;
-   background-color:#F7F7F7;
+   background-color:#FDFDFD;
  }
  body {
    font-family: "europa", sans-serif;
    color:#4B4B4B;
    max-width: 768px;
-   margin: 0 200px;
+   margin: 0 250px;
+   letter-spacing: 0.04em;
  }
  h1, h2, h3, h4, h5, h6 {
    font-family: "europa", sans-serif;
    font-style:normal;
  }
  h1 {
-   font-size:42px;
+   font-size:22px;
    font-style:normal;
    font-weight:700;
  }
+ .intro{
+   padding-top: 200px;
+   max-width: 500px;
+ }
+ .first-intro{
+   padding-bottom: 75px;
+ }
  .second-intro{
    color:#6F6F6F;
+   font-weight:400;   
+   padding-bottom: 250px;
+   max-width:400px;
  }
  h2 {
-   font-size:33.3px; 
+   font-size:18px; 
    font-weight:700;
  }
  p {
-   font-size:33.3px;
+   font-size:18px;
    font-weight:400;
-   color:#6F6F6F;     
- }
- .nav-buttons{
-   font-size:26px;
-   font-weight:700;
-   text-align: right;
-   margin-top: 15px;
-   margin-right: 0;  
-   float: none;
-   padding-right:2em;
+   color:#6F6F6F;
+   max-width: 310px;
+   line-height: 1.8;
+   padding-bottom: 100px;
  }
  .logo{
    margin-top: 15px;
    display: table;
  }
- .nav-buttons, .logo{
-   margin-top: 50px;
+ .projects {
+   padding-bottom: 500px;
  }
+ .about-me-intro{
+   padding-bottom: 20px;    
+ }
+ .first-paragraph, .second-paragraph, .third-paragraph{
+   padding-bottom: 20px;     
+ }
+ .about-me{
+   padding-bottom: 125px;
+ }
+ .contact-button-bottom{
+   margin-bottom: 200px;
+   letter-spacing: 0.05em;     
+ }
+
+/* Hover-Underline Animation */
+
+ul{
+  position: absolute;
+  width: 400px; height: 50px;
+  top: 50%; left: 50%;
+  margin-top: -25px; margin-left: -200px;
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+  
+}
+
+li{
+  position: relative;
+  font-size: 16px;
+  display: inline-block;
+  padding: 0px 15px;
+  font-family: "europa", sans-serif;
+  color:#4B4B4B;
+  font-weight:700;
+}
+
+a{
+  text-decoration: none;
+  color: #4B4B4B;
+}
+
+.link{
+  position: relative;
+}
+
+.link:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #4B4B4B;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+ 
+.link:hover:after{
+  width: 100%;
+  left: 0;
+  background: #4B4B4B;
+}
+
+
+/*END OF HOVER UNDERLINE ANIMATION CODE*/
+
+#credit{
+  position: absolute;
+  width: 64px; height: 20px;
+  top: 50%; left: 50%;
+  margin-top: 40px; margin-left: -38px;
+  padding: 6px;
+  background: #4B4B4B;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 7px 8px 0px #eab09d;
+  box-shadow: 0 7px 8px 0px #4B4B4B;
+  transition: all .2s ease;
+}
+
+#credit:hover{
+  -webkit-box-shadow: 0 9px 15px 0px #4B4B4B;
+  box-shadow: 0 9px 15px 0px #4B4B4B;
+}
+
+#credit a{
+  color: #000;
+}
