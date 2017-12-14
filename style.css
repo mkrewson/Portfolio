@@ -1,10 +1,12 @@
-html, body{
+ html, body{
    overflow-x: hidden;
    background-color:#F7F7F7;
  }
  body {
    font-family: "europa", sans-serif;
    color:#4B4B4B;
+   max-width: 768px;
+   margin: 0 200px;
  }
  h1, h2, h3, h4, h5, h6 {
    font-family: "europa", sans-serif;
@@ -15,11 +17,11 @@ html, body{
    font-style:normal;
    font-weight:700;
  }
- .intro{
+ .second-intro{
    color:#6F6F6F;
  }
  h2 {
-   font-size:33.3px;
+   font-size:33.3px; 
    font-weight:700;
  }
  p {
@@ -30,4 +32,16 @@ html, body{
  .nav-buttons{
    font-size:26px;
    font-weight:700;
+   text-align: right;
+   margin-top: 15px;
+   margin-right: 0;  
+   float: none;
+   padding-right:2em;
+ }
+ .logo{
+   margin-top: 15px;
+   display: table;
+ }
+ .nav-buttons, .logo{
+   margin-top: 50px;
  }
