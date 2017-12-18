@@ -18,6 +18,11 @@
    font-style:normal;
    font-weight:700;
  }
+ .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+ }
  .intro{
    padding-top: 200px;
    max-width: 500px;
@@ -43,16 +48,17 @@
    line-height: 1.8;
    padding-bottom: 100px;
  }
- .site-logo{
-    display: inline-block;
- }
- .nav-bar {
+ .header-left {
     display: inline-block;
     margin-top: 35px;
+    float: left;
+    width: 50%;
  }
- .nav-buttons{
+ .header-right{
     display: inline-block;
     margin-top: 35px;
+    float: right;
+    width: 50%;
  }
  .projects {
    padding-bottom: 500px;
