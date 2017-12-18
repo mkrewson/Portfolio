@@ -43,13 +43,16 @@
    line-height: 1.8;
    padding-bottom: 100px;
  }
- .logo{
-   margin-top: 30px;
-   display: inline-block;
+ .site-logo{
+    display: inline-block;
+ }
+ .nav-bar {
+    display: inline-block;
+    margin-top: 35px;
  }
  .nav-buttons{
-   margin-top: 30px;
-   display: inline-block;  
+    display: inline-block;
+    margin-top: 35px;
  }
  .projects {
    padding-bottom: 500px;
@@ -71,20 +74,16 @@
 /* Hover-Underline Animation */
 
 ul{
-  position: absolute;
-  width: 400px; height: 50px;
-  top: 50%; left: 50%;
-  margin-top: -25px; margin-left: -200px;
+  position: relative;
   padding: 0px;
   list-style: none;
   text-align: center;
-  
 }
 
 ul li{
   position: relative;
   font-size: 16px;
-  display: inline-block;
+  display: inline-flex;
   padding: 0px 15px;
   font-family: "europa", sans-serif;
   color:#4B4B4B;
@@ -108,8 +107,8 @@ a{
   margin-top: 5px;
   right: 0;
   background: #4B4B4B;
-  transition: width .2s ease;
-  -webkit-transition: width .2s ease;
+  transition: width 0.5s ease;
+  -webkit-transition: width 0.5s ease;
 }
  
 .link:hover:after{
@@ -133,7 +132,7 @@ a{
   border-radius: 3px;
   -webkit-box-shadow: 0 7px 8px 0px #eab09d;
   box-shadow: 0 7px 8px 0px #4B4B4B;
-  transition: all .2s ease;
+  transition: all .5s ease;
 }
 
 #credit:hover{
