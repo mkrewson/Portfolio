@@ -11,64 +11,76 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://use.typekit.net/bqm3shi.css">
         <link rel="stylesheet" href="animate.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="app.js"></script>
       
 	<body>
-	  <header>
-        <nav class= "nav-bar">
-             <div class="nav-left">
-               <a class="site-logo"><img src="My Logo@3x.png" height="42" width="42"></a>
-             </div>
-             <div class="nav-right">
-               <ul>
-                 <li><a class="link" id="top-about-button" href="about-me-button">About Me</a></li>
-                 <li><a class="link" href="top-contact-button">Contact</a></li>
-               </ul>
-             </div>
-        </nav>
-          <div class="intro">
-            <h1 class="first-intro">Hey there! My name is Michael Krewson.</h1>
-	        <h1 class="second-intro">I'm a UI/UX Designer and Researcher based in Northwest Arkansas.</h1>
-          </div>
-      </header>
+		  <header>
+			<nav class= "nav-bar">
+				 <div class="nav-left">
+				   <a class="site-logo"><img src="My Logo@3x.png" height="42" width="42"></a>
+				 </div>
+				 <div class="nav-right">
+				   <ul>
+					 <li style="line-height: 1.2"><a class="link" id="top-about-button" href="about-me-button">About Me</a></li>
+					 <li style="line-height: 1.2"><a class="link" href="top-contact-button">Contact</a></li>
+				   </ul>
+				 </div>
+			</nav>
+			  <div class="intro">
+				<h1 class="first-intro">Hey there! My name is Michael Krewson.</h1>
+				<h1 class="second-intro">I'm a UI/UX Designer and Researcher based in Northwest Arkansas.</h1>
+			  </div>
+		  </header>
+
+
+			<h2>Here's some of my work...</h2>
         
-<!-- Projects -->        
-      <section class="projects">
-        <h2>Here's some of my work...</h2>
-        <a href="paycrave.html" id="paycrave-link">
+        <section class="projects">
           <div class="project">
-            <img src="paycrave-project.png" alt="Paycrave" class="project-image">
-            <div class="overlay paycrave-overlay">
-              <div class="overlay-title">Paycrave</div>
-            </div>
+			<div style="height: 360px; border-radius: 20px; box-shadow: 0 20px 31px 0 #DDDDDD;">
+				<div id="paycraveImg" style="z-index: 2; position: absolute;">
+					<img src="paycrave-project.png"/>
+				</div>
+				<a href="paycrave.html" div id="paycraveOverlay" style="z-index: 1; position: absolute">
+					<img src="paycraveOverlay.png"/>
+				</a>
+			</div>
+			<br/>
           </div>
-        </a>
-        <a href="funder.html" id="funder-link">
           <div class="project">
-            <img src="funder-project.png" alt="Funder" class="project-image">
-            <div class="overlay trove-overlay">
-              <div class="overlay-title">Funder</div>
-            </div>
+			<div style="height: 360px; border-radius: 20px; box-shadow: 0 20px 31px 0 #DDDDDD;">
+				<div id="funderImg" style="z-index: 2; position: absolute">
+					<img src="funder-project.png"/>
+				</div>
+				<a href="funder.html" div id="funderOverlay" style="z-index: 1; position: absolute">
+					<img src="funderOverlay.png"/>
+				</a>
+			</div>
+			<br/>
           </div>
-        </a>
-        <a href="" id="tbd-link">
-          <div class="project" id="coming-soon">
-            <img src="tbd.png" alt="Upcoming Project" class="project-image">
-              <div class="overlay-title">Upcoming Project</div>
+          <div class="project">    
+			<div style="height: 360px; border-radius: 20px; box-shadow: 0 20px 31px 0 #DDDDDD;">
+				<img src="tbd.png"/>
+			</div>
           </div>
-        </a>
-       </section>
-        
-<!-- About Me -->        
-      <section class="about-me">
-        <h2 class="about-me-intro">Here’s a little bit about me…</h2>
-        <p class= "first-paragraph">I have always had a passion for understanding the way humans interact with our world, and the things we humans create. Inspired by design giants, such as Dieter Rams and Jony Ive, I grew up being fascinated by intelligent and simple design.</p>
-        <p class= "second-paragraph">I began my journey with a Design Apprenticeship at Bloc. Since then, I have been immersed in the world of human-centered digital design.</p> 
-        <p class= "third-paragraph">A few things I’m crazy about are coffee, travel, film, outdoor sports, friends and family, but most of all my lovely wife.</p>
-      </section>
-        
-<!-- Get in touch -->
-     <section class="contact-button-bottom">
-         <h2>If you’d like to get in touch, <a class="link" href="mister.krewson@gmail.com">contact me here</a>.</h2>
-     </section>
+        </section>
+
+
+		  <section class="about-me-left">
+			<h2 class="about-me-intro">Here’s a little bit about me…</h2>
+			<p class= "first-paragraph">I have always had a passion for understanding the way humans interact with our world, and the things we humans create. Inspired by design giants, such as Dieter Rams and Jony Ive, I grew up being fascinated by intelligent and simple design.</p>
+			<p class= "second-paragraph">I began my journey with a Design Apprenticeship at Bloc. Since then, I have been immersed in the world of human-centered digital design.</p> 
+			<p class= "third-paragraph">A few things I’m crazy about are coffee, travel, film, outdoor sports, friends and family, but most of all my lovely wife.</p>
+		  </section>
+          <section class="about-me-right">
+              <div class="profile-pictures"><img src="michael1.png" class="profile-picture"></div>
+              <div class="profile-pictures"><img src="michael2.png" class="profile-picture"></div>
+              <div class="profile-pictures"><img src="michael3.png" class="profile-picture"></div>
+          </section>
+
+		 <section class="contact-button-bottom">
+			 <h2 style= "line-height: 1.2">If you’d like to get in touch, <a class="link" href="mister.krewson@gmail.com">contact me here</a>.</h2>
+		 </section>
 	</body>
 </html> 
