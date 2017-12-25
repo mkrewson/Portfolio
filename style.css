@@ -1,14 +1,14 @@
-html, body{
+ html, body{
    overflow-x: hidden;
    background-color:#FDFDFD;
  }
  body {
    font-family: "europa", sans-serif;
    color:#4B4B4B;
-   margin: 0 10%;
-   letter-spacing: 0.04em;
-   max-width: 800px;
-   position: relative;
+   margin: 0 auto;
+   padding: 0 30px;
+   letter-spacing: 0.06em;
+   max-width: 940px;
  }
  h1, h2, h3, h4, h5, h6 {
    font-family: "europa", sans-serif;
@@ -18,6 +18,7 @@ html, body{
    font-size:22px;
    font-style:normal;
    font-weight:700;
+   line-height: 1.8;
  }
  .clearfix::after {
     content: "";
@@ -35,7 +36,7 @@ html, body{
    color:#6F6F6F;
    font-weight:400;   
    padding-bottom: 250px;
-   max-width:400px;
+   max-width:450px;
  }
  h2 {
    font-size:18px; 
@@ -45,13 +46,13 @@ html, body{
    font-size:18px;
    font-weight:400;
    color:#6F6F6F;
-   max-width: 310px;
-   line-height: 1.8;
+   max-width: 340px;
    padding-bottom: 100px;
+   line-height: 1.8;
  }
  .nav-left {
     display: inline-block;
-    margin-top: 35px;
+    margin-top: 40px;
     float: left;
     width: 50%;
  }
@@ -60,14 +61,18 @@ html, body{
  }
  .nav-right{
     display: inline-block;
-    margin-top: 32px;
+    margin-top: 35px;
     text-align: right;
     float: right;
     width: 50%;
     overflow: hidden;
  }
+ .project{
+    padding-bottom: 40px;
+ }
  .projects {
-   padding-bottom: 300px;
+   padding-top: 50px;
+   padding-bottom: 50px;
  }
  .about-me-intro{
    padding-bottom: 20px;    
@@ -75,12 +80,29 @@ html, body{
  .first-paragraph, .second-paragraph, .third-paragraph{
    padding-bottom: 20px;     
  }
- .about-me{
-   padding-bottom: 125px;
+ .about-me-left{
+   width: 50%;
+   float: left;
+   letter-spacing: 0.05em;
+ }
+ .about-me-right{
+   width: 50%;
+   float: right;
+   margin-bottom: 30px;
+ }
+ .profile-picture{
+   margin-left: 24%;
+   padding: 18px 0;
+ }
+ .profile-pictures{
+   margin: 0 auto;
+ }
+ .about-me-left, .about-me-right{
+   padding-bottom: 150px;
  }
  .contact-button-bottom{
-   margin-bottom: 200px;
-   letter-spacing: 0.05em;     
+   margin-bottom: 180px;
+   line-height: 1.8;
  }
      
 /* Hover-Underline Animation */
@@ -158,124 +180,13 @@ a{
 
 /* Projects */
 
-.projects {
-  padding-bottom: 50px;
-}
-
-.project {
-  width: 100%;
-  height: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  float: left;
-  background-position: center;
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-}
-
-.project-image {
-  width: 99%;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  visibility: hidden;
-  -webkit-transition: all 50ms ease-in-out;
-	   -moz-transition: all 50ms ease-in-out;
-		-ms-transition: all 50ms ease-in-out;
-		 -o-transition: all 50ms ease-in-out;
-			transition: all 50ms ease-in-out;
-}
-
-.paycrave-overlay {
-    background-color: #FE7655;
-}
-
-.funder-overlay {
-    background-color: #32B259;
-}
-
-.tbd-overlay {
-    background-color: #C8D3E0;
-}
-
-.overlay-title {
-  color: rgba(255,255,255,1);
-  font-size: 22px;
-  font-family: "europa", sans-serif;
-  position: absolute;
-  text-align: center
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  visibility: hidden;
-  -webkit-transition: all 50ms ease-in-out;
-     -moz-transition: all 50ms ease-in-out;
-    -ms-transition: all 50ms ease-in-out;
-     -o-transition: all 50ms ease-in-out;
-      transition: all 50ms ease-in-out;
-}
-
-#tbd-link .overlay-title {
-  top: 50%;
-}
-
-#paycrave-link:hover .overlay {
-  visibility: visible;
-  display: block;
-}
-
-#paycrave-link:hover .overlay-title {
-  visibility: visible;
-  display: block;
-}
-
-#funder-link:hover .overlay {
-  visibility: visible;
-  display: block;
-  background-color: #32B259;
-}
-
-#funder-link:hover .overlay-title {
-  visibility: visible;
-  display: block;
-}
-
-#tbd-link:hover .overlay {
-  visibility: visible;
-  display: block;
-}
-
-#tbd-link:hover .overlay-title {
-  visibility: visible;
-  display: block;
-}
 
 @media (min-width: 768px)  {
   .body{
-    max-width: 750px;
-  }
-  .overlay-title {
-    font-size: 30px;
+    margin: 0 20%;
   }
   #top-about-button{
     visibility:visible;
-  }
-  .overlay-description {
-    font-size: 16px;
-  }
-  .project {
-    width: 100%;
-    height: 320px;
-    transition: .5s ease;
   }
   .projects{
     padding-bottom: 200px;  
@@ -283,17 +194,6 @@ a{
 }
 
 @media (min-width: 1100px)  {
-  .project {
-    width: 100%;
-    height: 360px;
-    transition: .5s ease;
-  }
-
-  .overlay {
-    height: 100%;
-    width: 100%;
-  }
-
   #coming-soon {
     display: inline-block;
   }
