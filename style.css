@@ -26,7 +26,7 @@
     display: table;
  }
  .intro{
-   padding-top: 28%;
+   padding-top: 270px;
    max-width: 525px;
  }
  .first-intro{
@@ -98,7 +98,7 @@
    display:block;
  }
  .profile-picture{
-   margin-left: 24%;
+   margin-left: 25%;
    padding: 30px 0;
  }
  .profile-pictures{
