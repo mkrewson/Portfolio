@@ -5,8 +5,10 @@
  body {
    font-family: "europa", sans-serif;
    color:#4B4B4B;
-   margin: 0 10%;
+   margin: 0 auto;
+   padding: 0 50px;
    letter-spacing: 0.06em;
+   max-width: 940px;
  }
  h1, h2, h3, h4, h5, h6 {
    font-family: "europa", sans-serif;
@@ -76,6 +78,19 @@
    height: calc((80vw - 12px) * (360 / 940));
    background-repeat: no-repeat;
    background-size: contain;
+   border-radius: 20px;
+   box-shadow: 0 20px 31px 0 #DDDDDD;
+   margin-bottom: 50px;
+ }
+ #paycrave{
+    border-radius: 20px;
+    box-shadow: 0 20px 31px 0 #DDDDDD;
+    margin-bottom: 50px;
+ }
+ #funder{
+    border-radius: 20px;
+    box-shadow: 0 20px 31px 0 #DDDDDD;
+    margin-bottom: 50px;
  }
  #paycrave:hover {
    background-image: url('paycraveOverlay.png') !important;
