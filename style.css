@@ -75,7 +75,7 @@
  .project{
    padding-bottom: 40px;
    width: 100%;
-   height: calc((80vw - 12px) * (360 / 940));
+   height: 360px;
    background-repeat: no-repeat;
    background-size: contain;
    border-radius: 20px;
@@ -93,10 +93,10 @@
     margin-bottom: 50px;
  }
  #paycrave:hover {
-   background-image: url('paycraveOverlay.png') !important;
+   background-image: url('paycraveOverlay@3x.jpg') !important;
  }
  #funder:hover {
-   background-image: url('funderOverlay.png') !important;
+   background-image: url('funderOverlay@3x.jpg') !important;
  }
  .transitionable {
    transition: background-image 0.2s ease-in-out;
