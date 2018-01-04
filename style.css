@@ -6,7 +6,7 @@
    font-family: "europa", sans-serif;
    color:#4B4B4B;
    margin: 0 auto;
-   padding: 0 50px;
+   padding: 0 30px;
    letter-spacing: 0.06em;
    max-width: 940px;
  }
@@ -26,7 +26,7 @@
     display: table;
  }
  .intro{
-   padding-top: 35%;
+   padding-top: 38%;
    max-width: 525px;
  }
  .first-intro{
@@ -74,58 +74,55 @@
  }
  .project{
    width: 100%;
-   height: 360px;
+   height: 250px;
    background-repeat: no-repeat;
    background-size: 940px;
    border-radius: 20px;
    box-shadow: 0 20px 31px 0 #DDDDDD;
    margin-bottom: 50px;
-   background-position: 50% 0;
+   background-position: 50% 50%;
+   margin: 0 auto;
  }
  #paycrave{
     border-radius: 20px;
     box-shadow: 0 20px 31px 0 #DDDDDD;
     margin-bottom: 50px;
  }
+ #paycrave:active {
+    box-shadow: 0 5px 31px 0 #DDDDDD;
+    transition: all ease 0.8s;
+ }
  #funder{
     border-radius: 20px;
     box-shadow: 0 20px 31px 0 #DDDDDD;
     margin-bottom: 50px;
  }
+ #funder:active {
+    box-shadow: 0 5px 31px 0 #DDDDDD;
+    transition: all ease 0.8s;
+ }
  #paycrave:hover {
    background-image: url('paycraveOverlay@3x.jpg') !important;
    background-size: 940px;
-   background-position: 50% 0;
+   background-position: 50% 50%;
  }
  #funder:hover {
    background-image: url('funderOverlay@3x.jpg') !important;
    background-size: 940px;
-   background-position: 50% 0;
+   background-position: 50% 50%;
  }
  .transitionable {
    transition: background-image 0.2s ease-in-out;
  }
  .projects {
    padding-top: 50px;
-   padding-bottom: 50px;
+   padding-bottom: 200px;
  }
  .about-me-intro{
    padding-bottom: 20px;    
  }
  .first-paragraph, .second-paragraph, .third-paragraph{
    padding-bottom: 20px;     
- }
- .about-me-left{
-   width: 50%;
-   float: left;
-   letter-spacing: 0.05em;
-   display:block;
- }
- .about-me-right{
-   width: 50%;
-   float: right;
-   margin-bottom: 100px;
-   display:block;
  }
  .profile-picture{
    margin-left: 25%;
@@ -177,6 +174,7 @@ a{
   display: block;
   margin-top: 5px;
   right: 0;
+  border-radius: 100;
   background: #4B4B4B;
   transition: width 0.5s ease;
   -webkit-transition: width 0.5s ease;
@@ -240,15 +238,99 @@ a{
    padding-bottom: 250px;
   }
   #top-about-button{
-    visibility:visible;
+   visibility:visible;
   }
   .projects{
-    padding-bottom: 200px;  
+   padding-bottom: 200px;  
+  }
+  .project{
+   height: 360px;
+  }
+  .about-me-left{
+   width: 50%;
+   float: left;
+   letter-spacing: 0.05em;
+   display:block;
+  }
+  .about-me-right{
+   width: 50%;
+   float: right;
+   margin-bottom: 100px;
+   display:block;
+  }
+}
+    
+@media (min-width: 940px) {
+  .project{
+   height: 360px;
   }
 }
 
-@media (min-width: 1100px)  {
-  #coming-soon {
-    display: inline-block;
+/*
+ * Keyframes
+ */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+}
+
+/*
+ * CSS Page Transitions
+ * Don't forget to add vendor prefixes!
+ */
+.m-scene {
+  /** Basic styles for an animated element */
+  .scene_element {
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+
+  }
+
+  /** An element that fades in */
+  .scene_element--fadein {
+    animation-name: fadeIn;
+  }
+
+  /** An element that fades in and slides up */
+  .scene_element--fadeinup {
+    animation-name: fadeInUp;
+  }
+
+  /** An element that fades in and slides from the right */
+  .scene_element--fadeinright {
+    animation-name: fadeInRight;
   }
 }
