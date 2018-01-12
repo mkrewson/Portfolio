@@ -1,0 +1,275 @@
+ html, body{
+   overflow-x: hidden;
+   background-color:#FDFDFD;
+ }
+ body {
+   font-family: "europa", sans-serif;
+   color:#4B4B4B;
+   margin: 0 auto;
+   padding: 0 30px;
+   letter-spacing: 0.06em;
+   max-width: 940px;
+ }
+ h1, h2, h3, h4, h5, h6 {
+   font-family: "europa", sans-serif;
+   font-style:normal;
+ }
+ h1 {
+   font-size:60px;
+   font-style:normal;
+   font-weight:700;
+   line-height: 1.8;
+   -webkit-margin-before: 0;
+   -webkit-margin-after: 0;
+ }
+ .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+ }
+ .first-intro{
+   padding-top: 200px;
+   padding-bottom: 50px;
+ }
+ .second-intro{
+   color:#6F6F6F;
+   font-weight:400;   
+   padding-bottom: 250px;
+ }
+ h2 {
+   font-size:22px; 
+   font-weight:700;
+   line-height: 1.8;
+ }
+ h3 {
+   font-size:18px;
+   font-weight:400;
+   line-height: 1.8;
+ }
+ p {
+   font-size: 18px;
+   font-weight: 400;
+   color: #6F6F6F;
+   max-width: 310px;
+   padding-bottom: 100px;
+   line-height: 1.8;
+ }
+ .nav-left {
+    display: inline-block;
+    margin-top: 40px;
+    float: left;
+    width: 42px;
+ }
+ #top-return-to-projects-button{
+    visibility: hidden;
+ }
+ .nav-right{
+    display: inline-block;
+    margin-top: 14px;
+    text-align: right;
+    float: right;
+    width: auto;
+    overflow: hidden;
+    color: #4B4B4B;
+ }
+ .summary-section{
+    display: inline-block;
+    padding-bottom: 100px;
+ }
+ .problem-section{
+    display: inline-block;
+    padding-bottom: 100px;
+ }
+ .solution-section{
+    display: inline-block;
+    padding-bottom: 100px;
+ }
+ .original-design-graphics{
+    display: inline-block;
+    float: left;
+ }
+ .final-design-graphics{
+    display: inline-block;
+    float: right;
+ }
+
+/* Hover-Underline Animation */
+
+ul{
+  position: relative;
+  padding: 0px;
+  list-style: none;
+}
+
+ul li{
+  position:relative;
+  font-size: 16px;
+  display: inline-flex;
+  padding: 0 0 0 50px;
+  font-family: "europa", sans-serif;
+  color:#4B4B4B;
+  font-weight:700;
+  text-align: right;
+}
+
+a{
+  text-decoration: none;
+  color: #4B4B4B;
+}
+
+.link{
+  position: relative;
+}
+
+.link:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  border-radius: 100;
+  background: #4B4B4B;
+  transition: width 0.5s ease;
+  -webkit-transition: width 0.5s ease;
+}
+ 
+.link:hover:after{
+  width: 100%;
+  left: 0;
+  background: #4B4B4B;
+}
+
+
+/*END OF HOVER UNDERLINE ANIMATION CODE*/
+
+#credit{
+  position: absolute;
+  width: 64px; height: 20px;
+  top: 50%; left: 50%;
+  margin-top: 40px; margin-left: -38px;
+  padding: 6px;
+  background: #63ABFF;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 7px 8px 0px #eab09d;
+  box-shadow: 0 7px 8px 0px #63ABFF;
+  transition: all .5s ease;
+}
+
+#credit:hover{
+  -webkit-box-shadow: 0 9px 15px 0px #63ABFF;
+  box-shadow: 0 9px 15px 0px #63ABFF;
+}
+
+#credit a{
+  color: #000;
+}
+
+/* Projects */
+
+@media (min-width: 461px) {
+  .nav-right{
+    margin-top: 35px;
+}
+
+
+@media (min-width: 768px)  {
+  .body{
+   margin: 0 20%;
+  }
+  .second-intro{
+   color:#6F6F6F;
+   font-weight:400;   
+   padding-bottom: 250px;
+  }
+  #top-return-to-projects-button{
+   visibility:visible;
+  }
+  .purpose-section{
+   width: 60%;
+   max-width: 400px;
+   float: left;
+   letter-spacing: 0.05em;
+   display:block;
+ }
+  .roles-section{
+   width: 40%;
+   float: right;
+   margin-bottom: 50px;
+   display:block;
+ }
+}
+    
+/*
+ * Keyframes
+ */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+}
+
+/*
+ * CSS Page Transitions
+ * Don't forget to add vendor prefixes!
+ */
+.m-scene {
+  .scene_element {
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+
+  }
+
+  .scene_element--fadein {
+    animation-name: fadeIn;
+  }
+
+  .scene_element--fadeinup {
+    animation-name: fadeInUp;
+  }
+
+  .scene_element--fadeinright {
+    animation-name: fadeInRight;
+  }
+
+  /** Reverse "exit" animations */
+  &.is-exiting {
+      .scene_element {
+        animation-direction: alternate-reverse;
+      }
+  }
+}
