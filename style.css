@@ -14,6 +14,10 @@
    font-family: "europa", sans-serif;
    font-style:normal;
  }
+ .preload-images {
+	background: url(paycrave-project@3x.jpg) no-repeat -9999px -9999px;
+	background: url(funder-project@3x.jpg) no-repeat -9999px -9999px;
+ }
  h1 {
    font-size:60px;
    font-style:normal;
