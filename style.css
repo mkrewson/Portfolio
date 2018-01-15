@@ -14,7 +14,7 @@
    font-family: "europa", sans-serif;
    font-style:normal;
  }
- .preload-images {
+ .transitionable {
 	background: url(paycrave-project@3x.jpg) no-repeat -9999px -9999px;
 	background: url(funder-project@3x.jpg) no-repeat -9999px -9999px;
  }
@@ -62,7 +62,7 @@
     display: inline-block;
     margin-top: 40px;
     float: left;
-    width: 42px;
+    width: 50%;
  }
  #top-about-button{
     visibility: hidden;
@@ -72,7 +72,7 @@
     margin-top: 14px;
     text-align: right;
     float: right;
-    width: auto;
+    width: 50%;
     overflow: hidden;
     color: #6F6F6F;
  }
@@ -116,7 +116,7 @@
    background-position: 50% 50%;
  }
  .transitionable {
-   transition: background-image 0.2s ease-in-out;
+   transition: background-image 0.3s ease-in-out;
  }
  .projects {
    padding-top: 50px;
