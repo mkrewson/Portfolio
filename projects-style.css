@@ -72,6 +72,13 @@
     color: #4B4B4B;
     margin-top: 35px;
 }
+ .purpose-section{
+    display: inline-block;
+    padding-bottom: 0;
+ }
+ .roles-section{
+    display: inline-block;
+    padding-bottom: 50px;
  }
  .summary-section{
     display: inline-block;
