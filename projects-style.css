@@ -214,6 +214,9 @@ a{
   #top-return-to-projects-button{
    display: inline;
   }
+  #top-next-project-button{
+   padding: 0 0 0 50px;
+ }
   .purpose-section{
    width: 60%;
    float: left;
@@ -235,9 +238,6 @@ a{
   .final-design-graphics{
    width: 50%;
    float: right;
- }
-  ul li{
-   padding: 0 0 0 50px;
  }
 }
     
