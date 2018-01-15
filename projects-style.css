@@ -58,18 +58,20 @@
     display: inline-block;
     margin-top: 40px;
     float: left;
-    width: 42px;
+    width: 50%;
  }
  #top-return-to-projects-button{
-    visibility: hidden;
+    display: none;
  }
  .nav-right{
     display: inline-block;
     text-align: right;
     float: right;
-    width: auto;
+    width: 50%;
     overflow: hidden;
     color: #4B4B4B;
+    margin-top: 35px;
+}
  }
  .summary-section{
     display: inline-block;
@@ -129,7 +131,6 @@ ul li{
   position:relative;
   font-size: 16px;
   display: inline-flex;
-  padding: 0 0 0 50px;
   font-family: "europa", sans-serif;
   color:#4B4B4B;
   font-weight:700;
@@ -193,11 +194,6 @@ a{
 
 /* Projects */
 
-@media (min-width: 378px) {
-  .nav-right{
-    margin-top: 35px;
-}
-
 
 @media (min-width: 768px)  {
   .body{
@@ -209,7 +205,7 @@ a{
    padding-bottom: 250px;
   }
   #top-return-to-projects-button{
-   visibility: visible;
+   display: inline;
   }
   .purpose-section{
    width: 60%;
@@ -231,6 +227,9 @@ a{
   .final-design-graphics{
    width: 50%;
    float: right;
+ }
+  ul li{
+   padding: 0 0 0 50px;
  }
 }
     
