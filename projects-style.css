@@ -209,10 +209,12 @@ a{
   }
   .purpose-section{
    width: 60%;
-   max-width: 400px;
    float: left;
    letter-spacing: 0.05em;
    display:block;
+ }
+  .purpose-paragraph-section{
+   max-width: 400px;
  }
   .roles-section{
    width: 40%;
