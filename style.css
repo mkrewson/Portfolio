@@ -18,6 +18,23 @@
 	background: url(paycrave-project@3x.jpg) no-repeat -9999px -9999px;
 	background: url(funder-project@3x.jpg) no-repeat -9999px -9999px;
  }
+ i {
+    padding: 5px 0 0 35px;
+    font-size: 22px;
+    color:#4B4B4B;
+ }
+ #email-button:hover{
+    font-size: 25px;
+    transition: 0.2s;
+ }
+ #linkedin-button:hover{
+    font-size: 25px;
+    transition: 0.2s;
+ }
+ #twitter-button:hover{
+    font-size: 25px;
+    transition: 0.2s;
+ }
  h1 {
    font-size:60px;
    font-style:normal;
@@ -62,19 +79,20 @@
     display: inline-block;
     margin-top: 40px;
     float: left;
-    width: 50%;
+    width: 42px;
  }
  #top-about-button{
     visibility: hidden;
  }
  .nav-right{
     display: inline-block;
-    margin-top: 14px;
+    margin-top: 45px;
     text-align: right;
     float: right;
-    width: 50%;
+    width: auto;
     overflow: hidden;
     color: #6F6F6F;
+    height: 42px;
  }
  .project{
    width: 100%;
@@ -199,11 +217,6 @@ a{
 }
 
 /* Projects */
-
-@media (min-width: 461px) {
-  .nav-right{
-    margin-top: 35px;
-}
 
 
 @media (min-width: 768px)  {
