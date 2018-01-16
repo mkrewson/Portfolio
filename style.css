@@ -14,44 +14,22 @@
    font-family: "europa", sans-serif;
    font-style:normal;
  }
- .transitionable {
-	background: url(paycrave-project@3x.jpg) no-repeat -9999px -9999px;
-	background: url(funder-project@3x.jpg) no-repeat -9999px -9999px;
- }
- i {
-    padding: 5px 0 0 35px;
-    font-size: 22px;
-    color:#4B4B4B;
- }
- #email-button:hover{
-    font-size: 25px;
-    transition: 0.2s;
- }
- #linkedin-button:hover{
-    font-size: 25px;
-    transition: 0.2s;
- }
- #twitter-button:hover{
-    font-size: 25px;
-    transition: 0.2s;
- }
  h1 {
    font-size:60px;
    font-style:normal;
    font-weight:700;
    line-height: 1.8;
+   -webkit-margin-before: 0;
+   -webkit-margin-after: 0;
  }
  .clearfix::after {
     content: "";
     clear: both;
     display: table;
  }
- .intro{
-   padding-top: 38%;
-   max-width: 525px;
- }
  .first-intro{
-   padding-bottom: 20%;
+   padding-top: 175px;
+   padding-bottom: 50px;
  }
  .second-intro{
    color:#6F6F6F;
@@ -61,11 +39,12 @@
  h2 {
    font-size:22px; 
    font-weight:700;
-   line-height: 1.7;
+   line-height: 1.8;
  }
  h3 {
    font-size:18px;
-   font-weight:700;
+   font-weight:400;
+   line-height: 1.8;
  }
  p {
    font-size: 18px;
@@ -79,70 +58,99 @@
     display: inline-block;
     margin-top: 40px;
     float: left;
-    width: 42px;
+    width: 50%;
  }
- #top-about-button{
-    visibility: hidden;
+ #top-return-to-projects-button{
+    display: none;
+ }
+ #top-return-to-projects-button:hover{
+    transform: translateX(-4px);
+    transition: transform 0.4s ease-in-out;
+ }
+ #top-next-project-button:hover{
+    transform: translateX(4px);
+    transition: transform 0.4s ease-in-out;
+ }
+ #bottom-return-to-projects-button:hover{
+    transform: translateX(-4px);
+    transition: transform 0.4s ease-in-out;
+ }
+ #bottom-next-project-button:hover{
+    transform: translateX(4px);
+    transition: transform 0.4s ease-in-out;
+ }
+ .prototype-link{
+    color: #538ED2;
+ }
+ .prototype-link:hover{
+    color: #63ABFF;
+    transition: color 0.4s ease-in-out;
  }
  .nav-right{
     display: inline-block;
-    margin-top: 45px;
     text-align: right;
     float: right;
-    width: auto;
+    width: 50%;
     overflow: hidden;
-    color: #6F6F6F;
-    height: 42px;
+    color: #4B4B4B;
+    margin-top: 35px;
+}
+ .purpose-section{
+    display: inline-block;
+    padding-bottom: 0;
  }
- .project{
-   width: 100%;
-   height: 250px;
-   background-repeat: no-repeat;
-   background-size: 750px;
-   border-radius: 20px;
-   box-shadow: 0 20px 31px 0 #DDDDDD;
-   margin-bottom: 50px;
-   background-position: 50% 50%;
-   margin: 0 auto;
+ .roles-section{
+    display: inline-block;
+    padding-bottom: 50px;
  }
- #paycrave{
-    border-radius: 20px;
-    box-shadow: 0 20px 31px 0 #DDDDDD;
-    margin-bottom: 50px;
-    background-image: url(paycraveOverlay@3x.jpg)
+ .summary-section{
+    display: inline-block;
+    padding-bottom: 100px;
  }
- #funder{
-    border-radius: 20px;
-    box-shadow: 0 20px 31px 0 #DDDDDD;
-    margin-bottom: 50px;
-    background-image: url(funderOverlay@3x.jpg)
+ .problem-section{
+    display: inline-block;
+    padding-bottom: 100px;
  }
- .projects {
-   padding-top: 50px;
-   padding-bottom: 200px;
+ .solution-section{
+    display: inline-block;
+    padding-bottom: 100px;
  }
- .about-me-intro{
-   padding-bottom: 20px;
+ .graphics{
+    display: inline-block;
+    width: 100%;
  }
- .first-paragraph, .second-paragraph, .third-paragraph{
-   padding-bottom: 20px;     
+ .original-design-graphics{
+    display: block;
+    padding-bottom: 100px;
  }
- .profile-picture{
-   margin-left: 25%;
-   padding: 30px 0;
+ .final-design-graphics{
+    display: block;
+    padding-bottom: 100px;
  }
- .profile-pictures{
-   margin: 0 auto;
+ .process-section{
+    display: inline-block;
+    padding-bottom: 100px;
  }
- .about-me-left, .about-me-right{
-   padding-bottom: 150px;
+ .design-section{
+    display: inline-block;
+    padding-bottom: 100px;
  }
- .contact-button-bottom{
-   margin-bottom: 180px;
-   line-height: 1.8;
+ .color-palette-section{
+    display: inline-block;
+    padding-bottom: 100px;
  }
-     
-/* Hover-Underline Animation */
+ .typography-section{
+    display: inline-block;
+    padding-bottom: 100px;
+ }
+ .results-section{
+    display: inline-block;
+ }
+ .bottom-nav-bar{
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 150px;
+ }
 
 ul{
   position: relative;
@@ -154,7 +162,6 @@ ul li{
   position:relative;
   font-size: 16px;
   display: inline-flex;
-  padding: 0 0 0 40px;
   font-family: "europa", sans-serif;
   color:#4B4B4B;
   font-weight:700;
@@ -166,132 +173,48 @@ a{
   color: #4B4B4B;
 }
 
-.link{
-  position: relative;
-}
-
-.link:after{
-  content: '';
-  position: absolute;
-  width: 0; height: 2px;
-  display: block;
-  margin-top: 5px;
-  right: 0;
-  border-radius: 100;
-  background: #4B4B4B;
-  transition: width 0.5s ease;
-  -webkit-transition: width 0.5s ease;
-}
- 
-.link:hover:after{
-  width: 100%;
-  left: 0;
-  background: #4B4B4B;
-}
-
-
-/*END OF HOVER UNDERLINE ANIMATION CODE*/
-
-#credit{
-  position: absolute;
-  width: 64px; height: 20px;
-  top: 50%; left: 50%;
-  margin-top: 40px; margin-left: -38px;
-  padding: 6px;
-  background: #4B4B4B;
-  text-align: center;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-box-shadow: 0 7px 8px 0px #eab09d;
-  box-shadow: 0 7px 8px 0px #4B4B4B;
-  transition: all .5s ease;
-}
-
-#credit:hover{
-  -webkit-box-shadow: 0 9px 15px 0px #4B4B4B;
-  box-shadow: 0 9px 15px 0px #4B4B4B;
-}
-
-#credit a{
-  color: #000;
-}
-
 /* Projects */
 
 
 @media (min-width: 768px)  {
   .body{
-    margin: 0 20%;
-  }
-  .intro{
-   padding-top: 250px;
-   max-width: 525px;
-  }
-  .first-intro{
-   padding-bottom: 50px;
+   margin: 0 20%;
   }
   .second-intro{
    color:#6F6F6F;
    font-weight:400;   
    padding-bottom: 250px;
   }
-  #top-about-button{
-   visibility:visible;
+  #top-return-to-projects-button{
+   display: inline;
   }
-  .projects{
-   padding-bottom: 200px;  
-  }
-  .project{
-   height: 360px;
-   background-size: 940px;
-  }
-  .about-me-left{
-   width: 50%;
+  #top-next-project-button{
+   padding: 0 0 0 50px;
+ }
+  .purpose-section{
+   width: 60%;
    float: left;
    letter-spacing: 0.05em;
    display:block;
-  }
-  .about-me-right{
+ }
+  .purpose-paragraph-section{
+   max-width: 400px;
+ }
+  .roles-section{
+   width: 40%;
+   float: right;
+   display:block;
+ }
+  .original-design-graphics{
+   width: 50%;
+   float: left;
+ }
+  .final-design-graphics{
    width: 50%;
    float: right;
-   margin-bottom: 100px;
-   display:block;
-  }
-  #paycrave:active {
-   box-shadow: 0 5px 31px 0 #DDDDDD;
-   transition: all ease 0.8s;
-  }
-  #funder:active {
-   box-shadow: 0 5px 31px 0 #DDDDDD;
-   transition: all ease 0.8s;
-  }
-  #paycrave{
-   background-image: url('paycrave-project@3x.jpg')
-  }
-  #funder{
-   background-image: url('funder-project@3x.jpg')
-  }
-  #paycrave:hover {
-   background-image: url('paycraveOverlay@3x.jpg') !important;
-   background-size: 940px;
-   background-position: 50% 50%;
-  }
-  #funder:hover {
-   background-image: url('funderOverlay@3x.jpg') !important;
-   background-size: 940px;
-   background-position: 50% 50%;
-  }
-  .transitionable {
-   transition: background-image 0.3s ease-in-out;
-  }
+ }
 }
     
-@media (min-width: 940px) {
-  .project{
-   height: 360px;
-  }
-}
-
 /*
  * Keyframes
  */
@@ -337,7 +260,6 @@ a{
  * Don't forget to add vendor prefixes!
  */
 .m-scene {
-  /** Basic styles for an animated element */
   .scene_element {
     animation-duration: 0.25s;
     transition-timing-function: ease-in;
@@ -345,18 +267,22 @@ a{
 
   }
 
-  /** An element that fades in */
   .scene_element--fadein {
     animation-name: fadeIn;
   }
 
-  /** An element that fades in and slides up */
   .scene_element--fadeinup {
     animation-name: fadeInUp;
   }
 
-  /** An element that fades in and slides from the right */
   .scene_element--fadeinright {
     animation-name: fadeInRight;
+  }
+
+  /** Reverse "exit" animations */
+  &.is-exiting {
+      .scene_element {
+        animation-direction: alternate-reverse;
+      }
   }
 }
