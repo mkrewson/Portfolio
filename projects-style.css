@@ -63,6 +63,29 @@
  #top-return-to-projects-button{
     display: none;
  }
+ #top-return-to-projects-button:hover{
+    transform: translateX(-4px);
+    transition: transform 0.4s ease-in-out;
+ }
+ #top-next-project-button:hover{
+    transform: translateX(4px);
+    transition: transform 0.4s ease-in-out;
+ }
+ #bottom-return-to-projects-button:hover{
+    transform: translateX(-4px);
+    transition: transform 0.4s ease-in-out;
+ }
+ #bottom-next-project-button:hover{
+    transform: translateX(4px);
+    transition: transform 0.4s ease-in-out;
+ }
+ .prototype-link{
+    color: #538ED2;
+ }
+ .prototype-link:hover{
+    color: #63ABFF;
+    transition: color 0.4s ease-in-out;
+ }
  .nav-right{
     display: inline-block;
     text-align: right;
@@ -98,11 +121,11 @@
  }
  .original-design-graphics{
     display: block;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
  }
  .final-design-graphics{
     display: block;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
  }
  .process-section{
     display: inline-block;
@@ -120,13 +143,14 @@
     display: inline-block;
     padding-bottom: 100px;
  }
+ .results-section{
+    display: inline-block;
+ }
  .bottom-nav-bar{
     display: inline-block;
     width: 100%;
     padding-bottom: 150px;
  }
-
-/* Hover-Underline Animation */
 
 ul{
   position: relative;
@@ -147,56 +171,6 @@ ul li{
 a{
   text-decoration: none;
   color: #4B4B4B;
-}
-
-.link{
-  position: relative;
-}
-
-.link:after{
-  content: '';
-  position: absolute;
-  width: 0; height: 2px;
-  display: block;
-  margin-top: 5px;
-  right: 0;
-  border-radius: 100;
-  background: #4B4B4B;
-  transition: width 0.5s ease;
-  -webkit-transition: width 0.5s ease;
-}
- 
-.link:hover:after{
-  width: 100%;
-  left: 0;
-  background: #4B4B4B;
-}
-
-
-/*END OF HOVER UNDERLINE ANIMATION CODE*/
-
-#credit{
-  position: absolute;
-  width: 64px; height: 20px;
-  top: 50%; left: 50%;
-  margin-top: 40px; margin-left: -38px;
-  padding: 6px;
-  background: #63ABFF;
-  text-align: center;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-box-shadow: 0 7px 8px 0px #eab09d;
-  box-shadow: 0 7px 8px 0px #63ABFF;
-  transition: all .5s ease;
-}
-
-#credit:hover{
-  -webkit-box-shadow: 0 9px 15px 0px #63ABFF;
-  box-shadow: 0 9px 15px 0px #63ABFF;
-}
-
-#credit a{
-  color: #000;
 }
 
 /* Projects */
