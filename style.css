@@ -142,8 +142,10 @@
     margin-bottom: 50px;
     background-image: url(funderOverlay@3x.jpg)
  }
+ .my-work-intro{
+   padding-bottom: 50px;
+ }
  .projects {
-   padding-top: 50px;
    padding-bottom: 200px;
  }
  .about-me-intro{
