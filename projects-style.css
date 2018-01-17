@@ -79,8 +79,8 @@
     transition: color 0.4s ease-in-out;
  }
  .nav-right{
-    animation-name: fadeInRight;
-    animation-duration: 0.25s;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
     z-index: 2;
