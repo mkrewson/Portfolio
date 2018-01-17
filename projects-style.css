@@ -28,7 +28,7 @@
     display: table;
  }
  .first-intro{
-   padding-top: 175px;
+   padding-top: 90px;
    padding-bottom: 50px;
  }
  .second-intro{
@@ -79,6 +79,10 @@
     transition: color 0.4s ease-in-out;
  }
  .nav-right{
+    animation-name: fadeInRight;
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
     z-index: 2;
     display: inline-block;
     text-align: right;
@@ -87,11 +91,12 @@
     color: #4B4B4B;
     margin-top: 35px; 
  }
- .nav-right, .animation-right{
+ .animation-right{
    animation-name: fadeInRight;
    animation-duration: 0.25s;
    transition-timing-function: ease-in;
    animation-fill-mode: both;
+   clear: both;
  }
  .purpose-section{
     display: inline-block;
