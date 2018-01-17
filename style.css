@@ -101,6 +101,10 @@
     visibility: hidden;
  }
  .nav-right{
+    animation-name: fadeInUp ;
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;    
     display: inline-block;
     margin-top: 45px;
     text-align: right;
