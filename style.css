@@ -23,7 +23,7 @@
     font-size: 22px;
     color:#4B4B4B;
     animation-name: fadeIn;
-    animation-duration: 0.25s;
+    animation-duration: 0.3s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
  }
@@ -41,6 +41,7 @@
  }
  .blue-link{
     color: #538ED2;
+    clear:both;
  }
  .blue-link:hover{
     color: #63ABFF;
@@ -102,7 +103,7 @@
  }
  .nav-right{
     animation-name: fadeInUp ;
-    animation-duration: 0.25s;
+    animation-duration: 0.3s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;    
     display: inline-block;
@@ -115,8 +116,8 @@
     height: 42px;
  }
  .project{
-   animation-name: fadeInUp ;
-   animation-duration: 0.25s;
+   animation-name: fadeIn ;
+   animation-duration: 0.8s;
    transition-timing-function: ease-in;
    animation-fill-mode: both;
    width: 100%;
@@ -160,18 +161,19 @@
  }
  .about-me-left, .about-me-right{
    padding-bottom: 150px;
-   animation-name: fadeInUp;
-   animation-duration: 0.25s;
+   animation-name: fadeIn;
+   animation-duration: 0.8s;
    transition-timing-function: ease-in;
    animation-fill-mode: both;
  }
  .contact-button-bottom{
    margin-bottom: 180px;
    line-height: 1.8;
-   animation-name: fadeInUp;
-   animation-duration: 0.25s;
+   animation-name: fadeIn;
+   animation-duration: 0.8s;
    transition-timing-function: ease-in;
    animation-fill-mode: both;
+   clear:both;
  }
 
 /* Hover-Underline Animation */
@@ -239,7 +241,6 @@ a{
   .about-me-right{
    width: 50%;
    float: right;
-   margin-bottom: 100px;
    display:block;
   }
   #paycrave{
