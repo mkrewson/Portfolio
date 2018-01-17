@@ -89,7 +89,7 @@
  }
  .animation-right{
    animation-name: fadeInRight;
-   animation-duration: 0.25s;
+   animation-duration: 0.2s;
    transition-timing-function: ease-in;
    animation-fill-mode: both;
    clear: both;
