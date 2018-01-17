@@ -23,7 +23,7 @@
     font-size: 22px;
     color:#4B4B4B;
     animation-name: fadeIn;
-    animation-duration: 0.3s;
+    animation-duration: 0.25s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
  }
@@ -61,7 +61,7 @@
    padding-top: 40%;
    max-width: 525px;
    animation-name: fadeIn;
-   animation-duration: 0.3s;
+   animation-duration: 0.25s;
    transition-timing-function: ease-in;
    animation-fill-mode: both;
  }
@@ -112,7 +112,7 @@
  }
  .project{
    animation-name: fadeInUp ;
-   animation-duration: 0.3s;
+   animation-duration: 0.25s;
    transition-timing-function: ease-in;
    animation-fill-mode: both;
    width: 100%;
@@ -157,7 +157,7 @@
  .about-me-left, .about-me-right{
    padding-bottom: 150px;
    animation-name: fadeInUp;
-   animation-duration: 0.3s;
+   animation-duration: 0.25s;
    transition-timing-function: ease-in;
    animation-fill-mode: both;
  }
@@ -165,7 +165,7 @@
    margin-bottom: 180px;
    line-height: 1.8;
    animation-name: fadeInUp;
-   animation-duration: 0.3s;
+   animation-duration: 0.25s;
    transition-timing-function: ease-in;
    animation-fill-mode: both;
  }
