@@ -4,7 +4,7 @@
  }
  body {
    animation-name: fadeInRight;
-   animation-duration: 0.3s;
+   animation-duration: 0.25s;
    transition-timing-function: ease-in;
    animation-fill-mode: both;
    font-family: "europa", sans-serif;
