@@ -3,10 +3,6 @@
    background-color:#FDFDFD;
  }
  body {
-   animation-name: fadeInRight;
-   animation-duration: 0.25s;
-   transition-timing-function: ease-in;
-   animation-fill-mode: both;
    font-family: "europa", sans-serif;
    color:#4B4B4B;
    margin: 0 auto;
@@ -83,12 +79,19 @@
     transition: color 0.4s ease-in-out;
  }
  .nav-right{
+    z-index: 2;
     display: inline-block;
     text-align: right;
     float: right;
     width: 50%;
     color: #4B4B4B;
     margin-top: 35px; 
+ }
+ .nav-right, .animation-right{
+   animation-name: fadeInRight;
+   animation-duration: 0.25s;
+   transition-timing-function: ease-in;
+   animation-fill-mode: both;
  }
  .purpose-section{
     display: inline-block;
