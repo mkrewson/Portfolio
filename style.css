@@ -19,7 +19,7 @@
 	background: url(funder-project@3x.jpg) no-repeat -9999px -9999px;
  }
  i {
-    margin: 6px 0 0 45px;
+    margin: 6px 0 0 0;
     font-size: 22px;
     color:#4B4B4B;
     animation-name: fadeIn;
@@ -58,12 +58,13 @@
     display: table;
  }
  .intro{
-   padding-top: 40%;
+   padding-top: 25%;
    max-width: 525px;
    animation-name: fadeIn;
    animation-duration: 0.25s;
    transition-timing-function: ease-in;
    animation-fill-mode: both;
+   clear: both;
  }
  .first-intro{
    padding-bottom: 20%;
