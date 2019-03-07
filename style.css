@@ -155,7 +155,7 @@
    padding-bottom: 20px;     
  }
  .profile-picture{
-   margin-left: 23%;
+   margin-left: 25%;
    padding: 25px 0;
  }
  .profile-pictures{
@@ -211,10 +211,11 @@ a{
     margin: 0 20%;
   }
   .intro{
-   padding-top: 250px;
+   padding-top: 200px;
    max-width: 660px;
   }
   .first-intro{
+   font-size: 80px;
    padding-bottom: 50px;
   }
   .second-intro{
