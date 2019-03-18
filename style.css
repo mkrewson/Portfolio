@@ -15,6 +15,7 @@
    font-style:normal;
  }
  .transitionable {
+	background: url(miranda-cover.jpg) no-repeat -9999px -9999px;
 	background: url(paycrave-project@3x.jpg) no-repeat -9999px -9999px;
 	background: url(funder-project@3x.jpg) no-repeat -9999px -9999px;
  }
@@ -24,7 +25,7 @@
     color:#4B4B4B;
     animation-name: fadeIn;
     animation-duration: 0.3s;
-    transition-timing-function: ease-in;
+    transition-timing-function: ease-in-out;
     animation-fill-mode: both;
  }
  #email-button:hover{
@@ -129,6 +130,12 @@
    margin-bottom: 50px;
    background-position: 50% 50%;
    margin: 0 auto;
+ }
+ #miranda{
+    border-radius: 20px;
+    box-shadow: 0 20px 31px 0 #DDDDDD;
+    margin-bottom: 50px;
+    background-image: url(mirandaOverlay@3x.jpg)
  }
  #paycrave{
     border-radius: 20px;
@@ -244,11 +251,20 @@ a{
    float: right;
    display:block;
   }
+  #miranda{
+   background-image: url('miranda-cover.jpg')
+  }
   #paycrave{
    background-image: url('paycrave-project@3x.jpg')
   }
   #funder{
    background-image: url('funder-project@3x.jpg')
+  }
+  #miranda:hover {
+   background-image: url('mirandaOverlay@3x.jpg') !important;
+   background-size: 940px;
+   background-position: 50% 50%;
+   transition: background-image 0.5s ease-in-out;
   }
   #paycrave:hover {
    background-image: url('paycraveOverlay@3x.jpg') !important;
