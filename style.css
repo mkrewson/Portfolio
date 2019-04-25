@@ -289,14 +289,6 @@ a{
   }
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        color:#FDFDFD;
-        background-color:#4B4B4B;
-        
-    }
-}
-
 /*
  * Keyframes
  */
