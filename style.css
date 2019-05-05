@@ -58,6 +58,13 @@
     clear: both;
     display: table;
  }
+ .logo{
+    background-image: url("mk-logo-dark.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 42px;
+    width: 42px;
+ }
  .intro{
    padding-top: 25%;
    max-width: 525px;
@@ -325,6 +332,45 @@ a{
     opacity: 1;
     transform: none;
   }
+}
+
+
+@media (prefers-color-scheme: dark) {
+    html, body{
+        background-color:#1D1F21;
+    }
+    body {
+        color:#FDFDFD;
+    }
+    p{
+        color:#FDFDFD;
+    }
+    .second-intro{
+        color:#FDFDFD;
+    }
+    i{
+        color:#FDFDFD;
+    }
+    .logo{
+        background-image: url("mk-logo-light.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 42px;
+        width: 42px;
+        border-style:none;
+    }
+    .project{
+        box-shadow: 0 0 0 0;
+    }
+    #miranda{
+        box-shadow: 0 0 0 0;
+    }
+    #paycrave{
+        box-shadow: 0 0 0 0;
+    }
+    #funder{
+        box-shadow: 0 0 0 0;
+    }
 }
 
   /** Reverse "exit" animations */
