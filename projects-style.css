@@ -27,6 +27,13 @@
     clear: both;
     display: table;
  }
+ .logo{
+    background-image: url("mk-logo-dark.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 42px;
+    width: 42px;
+ }
  .first-intro{
    padding-top: 90px;
    padding-bottom: 50px;
@@ -162,7 +169,6 @@ ul li{
   font-size: 16px;
   display: inline-flex;
   font-family: "europa", sans-serif;
-  color:#4B4B4B;
   font-weight:700;
   text-align: right;
 }
@@ -212,6 +218,32 @@ a{
    width: 50%;
    float: right;
  }
+}
+
+@media (prefers-color-scheme: dark) {
+    html, body{
+        background-color:#1D1F21;
+    }
+    body {
+        color:#FDFDFD;
+    }
+    p{
+        color:#FDFDFD;
+    }
+    .second-intro{
+        color:#FDFDFD;
+    }
+    a{
+        color:#FDFDFD;
+    }
+    .logo{
+        background-image: url("mk-logo-light.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 42px;
+        width: 42px;
+        border-style:none;
+    }
 }
     
 /*
