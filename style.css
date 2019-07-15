@@ -76,6 +76,7 @@
  }
  .first-intro{
    padding-bottom: 20%;
+   max-width: 460px;
  }
  .second-intro{
    color:#6F6F6F;
